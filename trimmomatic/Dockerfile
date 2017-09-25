@@ -13,3 +13,5 @@ WORKDIR /NGStools
 
 RUN unzip Trimmomatic-0.36.zip 
 WORKDIR /NGStools/Trimmomatic-0.36
+
+RUN mv trimmomatic-0.36.jar trimmomatic.jar
