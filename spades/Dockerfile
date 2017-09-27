@@ -3,10 +3,10 @@ FROM ubuntu:16.04
 MAINTAINER Diogo N. Silva, diogosilva@medicina.ulisboa.pt
 
 RUN apt-get update && apt-get -y install \
-	gcc \
-	gzip \
-	make \
+	python \
+	python3 \
 	wget
+
 
 WORKDIR /NGStools
 
