@@ -10,6 +10,7 @@ RUN apt-get update && apt-get -y install \
 	wget  \
 	unzip \
 	python \
+	parallel \
 	zlib1g-dev
 
 WORKDIR /NGStools
