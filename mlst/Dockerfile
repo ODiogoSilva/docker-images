@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
 	liblist-moreutils-perl \
 	libjson-perl \
 	libfile-slurp-perl \
+	file \
 	git \
 	gzip 
 	
