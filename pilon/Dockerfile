@@ -10,4 +10,5 @@ RUN apt-get update && apt-get -y install \
 ADD https://github.com/broadinstitute/pilon/releases/download/v1.22/pilon-1.22.jar /NGStools/
 
 WORKDIR /NGStools
+RUN chmod 744 pilon-1.22.jar
 
