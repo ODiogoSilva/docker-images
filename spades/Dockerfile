@@ -10,6 +10,6 @@ RUN apt-get update && apt-get -y install \
 
 WORKDIR /NGStools
 
-RUN wget http://cab.spbu.ru/files/release3.11.0/SPAdes-3.11.0-Linux.tar.gz && tar -xf SPAdes-3.11.0-Linux.tar.gz
+RUN wget http://cab.spbu.ru/files/release3.11.1/SPAdes-3.11.1-Linux.tar.gz && tar -xf SPAdes-3.11.1-Linux.tar.gz
 
-ENV PATH="/NGStools/SPAdes-3.11.0-Linux/bin:$PATH"
+ENV PATH="/NGStools/SPAdes-3.11.1-Linux/bin:$PATH"
