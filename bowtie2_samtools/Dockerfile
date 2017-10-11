@@ -11,7 +11,7 @@ RUN apt-get update && apt-get -y install \
 	wget  \
 	unzip \
 	python \
-	python-3 \
+	python3 \
 	parallel \
 	zlib1g-dev
 
