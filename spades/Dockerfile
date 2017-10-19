@@ -3,6 +3,7 @@ FROM ubuntu:16.04
 MAINTAINER Diogo N. Silva, diogosilva@medicina.ulisboa.pt
 
 RUN apt-get update && apt-get -y install \
+	bash \
 	python \
 	python3 \
 	wget
@@ -10,6 +11,6 @@ RUN apt-get update && apt-get -y install \
 
 WORKDIR /NGStools
 
-RUN wget https://github.com/ablab/spades/releases/download/v3.10.0/SPAdes-3.10.0-Linux.tar.gz && tar -xf SPAdes-3.10.0-Linux.tar.gz
+RUN wget https://github.com/ablab/spades/releases/download/v3.11.1/SPAdes-3.11.1-Linux.tar.gz && tar -xf SPAdes-3.11.1-Linux.tar.gz
 
-ENV PATH="/NGStools/SPAdes-3.10.0-Linux/bin:$PATH"
+ENV PATH="/NGStools/SPAdes-3.11.1-Linux/bin:$PATH"
