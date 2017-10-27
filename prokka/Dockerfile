@@ -19,5 +19,6 @@ RUN conda config --add channels defaults && conda config --add channels conda-fo
 
 # INSTALL abricate
 RUN conda install prokka
+RUN conda install barrnap
 RUN prokka --setupdb
 
