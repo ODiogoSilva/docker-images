@@ -13,3 +13,5 @@ ENV PATH="/NGStools/seq_typing:$PATH"
 
 RUN chmod -R o+wr /NGStools/
 
+WORKDIR /data/
+
