@@ -12,4 +12,5 @@ RUN pip3 install future
 ENV PATH="/NGStools/seq_typing:$PATH"
 
 RUN chmod o+wr /NGStools/seq_typing/modules/
+RUN chmod o+wr /NGStools/ReMatCh/modules/
 
