@@ -34,7 +34,7 @@ RUN rm -rf samtools-1.4.1.tar.bz2
 RUN wget https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.2.9/bowtie2-2.2.9-linux-x86_64.zip && unzip bowtie2-2.2.9-linux-x86_64.zip
 ENV PATH="/NGStools/bowtie2-2.2.9:$PATH"
 
-RUN git clone https://github.com/B-UMMI/ReMatCh.git
+RUN git clone -b subprocess_exceptions_description https://github.com/B-UMMI/ReMatCh.git
 ENV PATH="/NGStools/ReMatCh:$PATH"
 
 
