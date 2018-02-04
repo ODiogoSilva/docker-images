@@ -7,7 +7,7 @@ RUN apt-get update && apt-get -y install \
 
 WORKDIR /NGStools
 
-RUN git clone -b other_probable_types https://github.com/B-UMMI/seq_typing.git
+RUN git clone https://github.com/B-UMMI/seq_typing.git
 RUN pip3 install future
 ENV PATH="/NGStools/seq_typing:$PATH"
 
