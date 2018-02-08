@@ -1,18 +1,16 @@
 # DOCKERFILE for rematch https://github.com/B-UMMI/ReMatCh
-FROM ubuntu:16.04
+FROM ummidock/assemblerflow_base:1.0.0
 MAINTAINER Diogo N. Silva, diogosilva@medicina.ulisboa.pt
 
 RUN apt-get update && apt-get -y install \
 	bc \
 	bzip2 \
-	git \
 	gcc \
 	gzip \
 	make \
 	wget  \
 	unzip \
 	python \
-	python3 \
 	parallel \
 	zlib1g-dev
 
