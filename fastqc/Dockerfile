@@ -1,11 +1,10 @@
 # DOCKERFILE for fastqc https://github.com/tseemann/abricate 
-FROM ubuntu:16.04
+FROM ummidock/assemblerflow_base:1.0.0
 MAINTAINER Diogo N. Silva, diogosilva@medicina.ulisboa.pt
 
 RUN apt-get update && apt-get -y install \
     openjdk-8-jre \
     perl \
-	python3 \
     unzip
 
 ADD http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.5.zip /NGStools/
