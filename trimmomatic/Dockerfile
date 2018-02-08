@@ -1,9 +1,8 @@
 # DOCKERFILE for trimmomatic 
-FROM ubuntu:16.04
+FROM ummidock/assemblerflow_base:1.0.0
 MAINTAINER Diogo N. Silva, diogosilva@medicina.ulisboa.pt
 
 RUN apt-get update && apt-get -y install \
-	python3 \
     openjdk-8-jre \
     unzip
 
