@@ -7,7 +7,7 @@ RUN apt-get update && apt-get -y install \
     perl \
     unzip
 
-ADD http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.5.zip /NGStools/
+ADD http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.7.zip /NGStools/
 
 WORKDIR /NGStools
 
