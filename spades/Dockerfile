@@ -1,5 +1,5 @@
 # DOCKERFILE for spades
-FROM ummidock/assemblerflow_base:1.0.0
+FROM ubuntu:16.04
 MAINTAINER Diogo N. Silva, diogosilva@medicina.ulisboa.pt
 
 RUN apt-get update && apt-get -y install \
@@ -11,6 +11,6 @@ RUN apt-get update && apt-get -y install \
 
 WORKDIR /NGStools
 
-RUN wget https://github.com/ablab/spades/releases/download/v3.11.0/SPAdes-3.11.0-Linux.tar.gz && tar -xf SPAdes-3.11.0-Linux.tar.gz
+RUN wget https://github.com/ablab/spades/releases/download/v3.11.1/SPAdes-3.11.1-Linux.tar.gz && tar -xf SPAdes-3.11.1-Linux.tar.gz
 
-ENV PATH="/NGStools/SPAdes-3.11.0-Linux/bin:$PATH"
+ENV PATH="/NGStools/SPAdes-3.11.1-Linux/bin:$PATH"
