@@ -6,6 +6,7 @@ RUN apt-get update && apt-get -y install \
 	bc \
 	bzip2 \
 	gcc \
+	git \
 	gzip \
 	make \
 	wget  \
