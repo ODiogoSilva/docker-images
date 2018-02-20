@@ -1,5 +1,5 @@
 # DOCKERFILE for seq_typing https://github.com/B-UMMI/seq_typing
-FROM odiogosilva/rematch:latest
+FROM ummidock/rematch:3.2.0-2
 MAINTAINER Diogo N. Silva, diogosilva@medicina.ulisboa.pt
 
 RUN apt-get update && apt-get -y install \
