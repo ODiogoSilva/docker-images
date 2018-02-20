@@ -5,6 +5,7 @@ MAINTAINER Diogo N. Silva, diogosilva@medicina.ulisboa.pt
 RUN apt-get update && apt-get -y install \
     openjdk-8-jre \
     perl \
+	python3 \
     unzip
 
 ADD http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.7.zip /NGStools/
