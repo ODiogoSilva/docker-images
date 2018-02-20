@@ -4,6 +4,7 @@ MAINTAINER Diogo N. Silva, diogosilva@medicina.ulisboa.pt
 
 RUN apt-get update && apt-get -y install \
     openjdk-8-jre \
+	python3 \
     unzip
 
 ADD http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.36.zip /NGStools/
