@@ -20,4 +20,4 @@ ENV PATH="/NGStools/miniconda/bin:$PATH"
 RUN conda config --add channels defaults && conda config --add channels conda-forge && conda config --add channels bioconda
 
 # INSTALL spades
-RUN conda install spades=3.7.0
+RUN conda install spades=3.9.0
