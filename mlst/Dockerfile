@@ -11,7 +11,12 @@ RUN apt-get update && apt-get install -y \
 	libfile-slurp-perl \
 	file \
 	git \
-	gzip 
+	gzip \
+	wget
 	
 RUN git clone https://github.com/tseemann/mlst.git
 ENV PATH="/NGStools/mlst/bin:${PATH}"
+
+# Replace default db with one without yersinia pseudotuberculosis
+RUN wget https://github.com/tseemann/mlst/files/1856005/db_without_ypseudotuberculosis.tar.gz && tar xf db_without_ypseudotuberculosis.tar.gz
+RUN rm -r mlst/db && mv db mlst/db
