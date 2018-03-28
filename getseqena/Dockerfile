@@ -3,6 +3,7 @@ FROM ubuntu:16.04
 MAINTAINER Diogo N. Silva, diogosilva@medicina.ulisboa.pt
 
 RUN apt-get update && apt-get -y install \
+	gawk \
 	bc \
 	bzip2 \
 	gcc \
