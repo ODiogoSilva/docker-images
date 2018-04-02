@@ -4,6 +4,7 @@ MAINTAINER Diogo N. Silva, diogosilva@medicina.ulisboa.pt
 
 RUN apt-get update && apt-get -y install \
 	bash \
+	python3 \
 	wget
 
 
