@@ -16,6 +16,8 @@ RUN apt-get update && apt-get -y install \
 	python3 \
 	zlib1g-dev
 
+RUN ln -sf /usr/bin/gawk /usr/bin/awk
+
 WORKDIR /NGStools
 
 RUN wget https://sourceforge.net/projects/samtools/files/samtools/1.3.1/samtools-1.3.1.tar.bz2
