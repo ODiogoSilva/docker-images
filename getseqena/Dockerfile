@@ -59,7 +59,4 @@ ENV PATH="/NGStools/sratoolkit.2.9.0-ubuntu64/bin:$PATH"
 RUN git clone https://github.com/B-UMMI/getSeqENA.git
 ENV PATH="/NGStools/getSeqENA/:$PATH"
 
-# Fix awk version
-RUN sed -i 's/awk/gawk/g' /NGStools/getSeqENA/getSeqENA.py
-RUN sed -i 's/awk/gawk/g' /NGStools/getSeqENA/utils.py
 
